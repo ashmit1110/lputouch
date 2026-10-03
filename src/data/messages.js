@@ -1,0 +1,72 @@
+export const messages = [
+  {
+    id: 1,
+    title: "PEL136 Mid Term Exam Update",
+    body: "Dear Student, Your request to prorate the PEL136 Mid Term Exam to 8th October cannot be accommodated. However, the exam can be shifted from the 2-3 shift to the 4-5 shift on 6th October itself. Please report accordingly.",
+    footer: "Administrator (Oct 03, 2026)",
+    extraContent: null,
+  },
+  {
+    id: 2,
+    title: "TCS CodeVita Season 14 – Registration and Participation Details Submission",
+    body: "Dear Student,You are encouraged to participate in TCS CodeVita Season 14, a global program...",
+    footer: "Saurav Singh (Oct 01, 2026)",
+    extraContent: null,
+  },
+  {
+    id: 3,
+    title: "Regarding Demo Class on my-class portal",
+    body: "Dear Student, A demo class is scheduled for you on <span style=\"color: #c78a48\">01 Oct 2026</span> from <span style=\"color: #c78a48\">13:00-15:00</span>. Kindly at...",
+    footer: "Varun Kumra (Sep 30, 2026)",
+    extraContent: null,
+  },
+  {
+    id: 4,
+    title: "TCS CodeVita Season 14 - Registration and Participation Details Submission",
+    body: "Dear Student,You are encouraged to participate in TCS CodeVita Season 14, a global program...",
+    footer: "Saurav Singh (Sep 30, 2026)",
+    extraContent: null,
+  },
+  {
+    id: 5,
+    title: "TCS CodeVita Season 14 - Your Opportunity to Compete on a Global Coding Platform",
+    body: "Dear Student,You are eligible to participate in TCS CodeVita Season 14, a global programmi...",
+    footer: "Saurav Singh (Sep 28, 2026)",
+    extraContent: null,
+  },
+  {
+    id: 6,
+    title: "Important Safety Advisory for Students",
+    body: "Dear Student,You are strictly advised to remain inside your hostel/place of residence and ...",
+    footer: "Administrator (Sep 27, 2026)",
+    extraContent: null,
+  },
+  {
+    id: 7,
+    title: "Important Information",
+    body: "Dear Student, We wish to reassure you that all students are safe and secure on campus. The...",
+    footer: "Administrator (Sep 27, 2026)",
+    extraContent: null,
+  },
+  {
+    id: 8,
+    title: "Opening of Labs in Extended Hours",
+    body: "Dear Student, To facilitate the project-based learning and enhancement of practical learni...",
+    footer: "Niraj Sharma (Sep 26, 2026)",
+    extraContent: null,
+  },
+  {
+    id: 9,
+    title: "LPU Laboratory Dashboard",
+    body: "Dear Student, Welcome to the UMS Laboratory Dashboard (UMS Dashboard-> Academics-> LMS-> L...",
+    footer: "Niraj Sharma (Sep 26, 2026)",
+    extraContent: null,
+  },
+  {
+    id: 10,
+    title: "Important Instructions for the Students Appearing in NPTEL Examinations (July - <span style=\"color: #c78a48\">Dec 2026</span> Semester)",
+    body: "Dear Students, This is to inform all those who have registered for NPTEL courses and are ...",
+    footer: "Sanchit Singla (Sep 19, 2026)",
+    extraContent: null,
+  }
+];

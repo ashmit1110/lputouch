@@ -1,0 +1,277 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.mobile-view {
+  width: 100%;
+  max-width: 390px;
+  height: 100vh;
+  background-color: #f2f2f6;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.fixed-top {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+.status-bar {
+  background-color: #2c2c2e;
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.status-left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.time {
+  font-weight: 600;
+}
+
+.mute-icon {
+  width: 14px;
+  height: 14px;
+  opacity: 0.9;
+}
+
+.status-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.signal-icon {
+  display: flex;
+  align-items: flex-end;
+  gap: 1px;
+  height: 12px;
+}
+
+.signal-bar {
+  width: 3px;
+  background-color: white;
+  border-radius: 1px;
+}
+.signal-bar.h-1 { height: 4px; }
+.signal-bar.h-2 { height: 6px; }
+.signal-bar.h-3 { height: 8px; }
+.signal-bar.h-4 { height: 11px; }
+
+.wifi-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.battery-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-left: 2px;
+}
+
+.battery-body {
+  width: 24px;
+  height: 12px;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 4px;
+  padding: 1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.battery-fill {
+  background-color: white;
+  height: 100%;
+  border-radius: 2px;
+  position: absolute;
+  left: 1px;
+}
+
+.battery-text {
+  font-size: 9px;
+  font-weight: 700;
+  color: black;
+  z-index: 1;
+  position: absolute;
+}
+
+.battery-nub {
+  width: 2px;
+  height: 4px;
+  background-color: rgba(255,255,255,0.4);
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.header {
+  background-color: #2c2c2e;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  color: white;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 70px;
+}
+
+.back-icon {
+  width: 22px;
+  height: 22px;
+  margin-right: 2px;
+  margin-left: -6px;
+}
+
+.back-text {
+  font-size: 17px;
+  color: #ffffff;
+  letter-spacing: -0.4px;
+}
+
+.header-title {
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: -0.4px;
+  flex: 1;
+  text-align: center;
+}
+
+.header-right {
+  width: 70px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.calendar-icon {
+  width: 22px;
+  height: 22px;
+}
+
+.scrollable-content {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 20px;
+}
+
+.search-container {
+  padding: 10px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.search-bar {
+  background-color: #ffffff;
+  height: 44px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  border: 1px solid #e0e0e0;
+}
+
+.search-icon {
+  width: 18px;
+  height: 18px;
+  color: #8e8e93;
+  margin-right: 8px;
+}
+
+.search-placeholder {
+  color: #8e8e93;
+  font-size: 16px;
+}
+
+.messages-list {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.message-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  border: 1px solid #f0f0f0;
+}
+
+.message-title {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 6px;
+}
+
+.message-body {
+  font-size: 15px;
+  color: #4a4a4a;
+  line-height: 1.4;
+  margin-bottom: 8px;
+  white-space: pre-line;
+}
+
+.message-footer {
+  font-size: 14px;
+  color: #c78a48;
+}
+
+.message-extra {
+  font-size: 14px;
+  color: #c78a48;
+  margin-top: 2px;
+  line-height: 1.4;
+}
+
+.overlapping-card .overlapping-text {
+  line-height: 0.8;
+  color: rgba(74, 74, 74, 0.7);
+}
+
+@media (max-width: 390px) {
+  .mobile-view {
+    height: 100vh;
+    box-shadow: none;
+  }
+}
